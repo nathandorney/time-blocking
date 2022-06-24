@@ -17,6 +17,8 @@ import Block16 from "./components/Block16";
 import Block17 from "./components/Block17";
 import Block18 from "./components/Block18";
 
+import "./app.css";
+
 const date = new Date().toDateString();
 
 const App = () => {
