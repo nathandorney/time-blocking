@@ -4,7 +4,7 @@ const Block1 = () => {
   const [block, setBlock] = useLocalStorage("block1", "");
 
   return (
-    <form className="hour">
+    <div className="hour">
       <label htmlFor="block">06:00</label>
       <input
         type="text"
@@ -13,7 +13,7 @@ const Block1 = () => {
         placeholder="Enter something..."
         className="input"
       />
-    </form>
+    </div>
   );
 };
 

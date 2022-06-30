@@ -9,11 +9,11 @@
   --grey-600: #d4d4d4;
   --grey-500: #a3a3a3;
   --grey-400: #737373;
-  --grey-300: #525252;
-  --grey-200: #404040;
+  --grey-300: #373737;
+  --grey-200: #303030;
   --grey-100: #262626;
-  --grey-50: #171717;
-  --white: #050505;
+  --grey-50: #242424;
+  --white: #1a1a1a;
 
   /* Spacing */
   --space-1: 4px;
@@ -130,10 +130,14 @@ a:hover {
 
 .date {
   font-weight: 500;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(0deg, rgba(26, 26, 26, 0) 10%, #1a1a1a 100%);
 }
 
 /* Form Styling */
@@ -148,15 +152,17 @@ a:hover {
 
 .input {
   width: 100%;
-  padding: var(--space-2) var(--space-2);
+  padding: var(--space-3) var(--space-3);
   border: 0;
+  border-radius: var(--radius-medium);
   color: var(--black);
-  background: transparent;
+  background: var(--grey-100);
   font-size: var(--font-size-3);
 }
 
 ::placeholder {
   color: var(--grey-300);
+  opacity: 0;
 }
 
 .submit-button {
@@ -170,7 +176,7 @@ input:focus {
 
 label {
   text-align: left;
-  width: 3rem;
+  width: 4rem;
   color: var(--grey-500);
-  margin-right: var(--space-2);
+  margin-right: var(--space-1);
 }
